@@ -1,0 +1,248 @@
+﻿1
+00:00:05,433 --> 00:00:08,633
+A percepção sensorial é testada com uma série de picadas de alfinete.
+
+2
+00:00:08,633 --> 00:00:12,966
+A retirada diante de um estímulo doloroso é utilizada em pacientes obnubilados ou afásicos.
+
+3
+00:00:12,966 --> 00:00:16,199
+Não utilize nenhum objeto que não seja um alfinete de segurança ou de costureira.
+
+4
+00:00:16,200 --> 00:00:19,500
+Não são permitidos clipes de papel, gravetos quebrados ou canetas esferográficas.
+
+5
+00:00:19,500 --> 00:00:23,833
+Examine o paciente com o alfinete nas porções proximais dos quatro membros
+
+6
+00:00:23,833 --> 00:00:26,333
+e pergunte se o paciente sente o estímulo.
+
+7
+00:00:26,333 --> 00:00:28,566
+O paciente não precisa estar de olhos fechados.
+
+8
+00:00:28,566 --> 00:00:33,232
+Pergunte ao paciente se existe alguma assimetria entre os lados direito e esquerdo.
+
+9
+00:00:33,233 --> 00:00:38,566
+Perguntar se o paciente sente a picada nítida ou amortecimento só gera confusão e m[a interpretação.
+
+10
+00:00:38,566 --> 00:00:45,232
+Para otimizar a reprodutibilidade, peça para o paciente apenas comparar os dois lados e dizer se há alguma diferença.
+
+11
+00:00:45,233 --> 00:00:49,933
+Em pacientes confusos, afásicos ou com nível de consciência reduzido, observe a simetria das expressões faciais.
+
+12
+00:00:49,933 --> 00:00:52,166
+e a resposta ao estímulo doloroso.
+
+13
+00:00:52,166 --> 00:00:55,632
+Apenas a perda de sensibilidade atribuída ao AVC é pontuada.
+
+14
+00:00:55,633 --> 00:01:02,766
+Examine quantas áreas do corpo (braços, pernas, tronco e rosto) forem necessárias para avaliar com precisão a perda hemi-sensorial.
+
+15
+00:01:02,766 --> 00:01:07,632
+Ao testar a sensibilidade, não teste as extremidades dos membros, como mãos ou pés,
+
+16
+00:01:07,633 --> 00:01:11,299
+pois a resposta pode ser confundida por uma neuropatia não relacionada.
+
+17
+00:01:11,300 --> 00:01:15,033
+A menos que seja absolutamente necessário, não faça o teste por cima da roupa.
+
+18
+00:01:15,033 --> 00:01:20,866
+Vou tocar você no lado direitp ou esquerdo e você me diz se são iguais ou se um lado é mais sensível.
+
+19
+00:01:20,866 --> 00:01:21,399
+Ok.
+
+20
+00:01:21,400 --> 00:01:28,600
+Começando pelo seu rosto: direita, esquerda, qual é mais nítido?
+
+21
+00:01:28,600 --> 00:01:30,866
+Ou são a mesma coisa?
+
+22
+00:01:30,866 --> 00:01:31,932
+Mais ou menos a mesma coisa.
+
+23
+00:01:31,933 --> 00:01:35,133
+Mais ou menos a mesma coisa, certo. Vamos experimentar nas mãos:
+
+24
+00:01:35,133 --> 00:01:41,399
+direita, esquerda, qual é mais nítido? Ou são a mesma coisa?
+
+25
+00:01:41,400 --> 00:01:42,200
+Mais amortecido.
+
+26
+00:01:42,200 --> 00:01:44,766
+Mais amortecido na direita, ok.
+
+27
+00:01:44,766 --> 00:01:48,066
+Vamos testar suas pernas: qual é mais nítido?
+
+28
+00:01:48,066 --> 00:01:51,132
+Ou são a mesma coisa?
+
+29
+00:01:51,133 --> 00:01:55,133
+Ah, um lado é mais amortecido, o lado direito.
+
+30
+00:01:55,133 --> 00:01:58,433
+Para o item número 8 da escala, este paciente obteve uma pontuação de 1.
+
+31
+00:01:58,433 --> 00:02:00,866
+Vamos analisar como esse item da escala é pontuado.
+
+32
+00:02:00,866 --> 00:02:04,132
+Atribua uma pontuação 0 quando não houver evidência de perda sensorial.
+
+33
+00:02:04,133 --> 00:02:06,699
+Atribua uma pontuação de 1 para perda leve ou moderada.
+
+34
+00:02:06,700 --> 00:02:09,133
+Vou testar agora o quanto você sente este alfinete.
+
+35
+00:02:09,133 --> 00:02:12,999
+Quero que você me diga se o lado direito é mais nítido, o lado esquerdo ou se são iguais.
+
+36
+00:02:13,000 --> 00:02:13,400
+Ok.
+
+37
+00:02:13,400 --> 00:02:17,066
+Começando pelo seu rosto.
+
+38
+00:02:17,066 --> 00:02:18,699
+Qual lado é mais nítido?
+
+39
+00:02:18,700 --> 00:02:19,533
+Esquerdo.
+
+40
+00:02:19,533 --> 00:02:22,333
+Qual lado é mais nítido?
+
+41
+00:02:22,333 --> 00:02:23,199
+Esquerdo.
+
+42
+00:02:23,200 --> 00:02:28,900
+Braços: qual lado é mais nítido?
+
+43
+00:02:28,900 --> 00:02:29,366
+Mais ou menos a mesma coisa.
+
+44
+00:02:29,366 --> 00:02:31,066
+Mais ou menos a mesma coisa? Ok.
+
+45
+00:02:31,066 --> 00:02:35,832
+Agora vamos para as pernas.
+
+46
+00:02:35,833 --> 00:02:36,766
+O lado esquerdo é mais nítido.
+
+47
+00:02:36,766 --> 00:02:38,266
+O lado esquerdo é mais nítido.
+
+48
+00:02:38,266 --> 00:02:41,066
+Atribua uma pontuação de 2 quando as evidências confirmarem perdas graves.
+
+49
+00:02:41,066 --> 00:02:45,799
+Atribua uma nota 2 apenas quando for possível demonstrar claramente uma perda grave ou total da sensibilidade.
+
+50
+00:02:45,800 --> 00:02:50,866
+Pacientes com acidente vascular cerebral no tronco cerebral, que apresentam perda bilateral de sensibilidade, também obtêm uma pontuação de 2.
+
+51
+00:02:50,866 --> 00:02:54,266
+Gostaria de ver se você tem alguma sensação.
+
+52
+00:02:54,266 --> 00:02:56,432
+Posso tocar você com este alfinete?
+
+53
+00:02:56,433 --> 00:03:01,433
+O que me diz? Você consegue sentir?
+
+54
+00:03:01,433 --> 00:03:05,166
+Não sei dizer, então vou tentar outra coisa.
+
+55
+00:03:05,166 --> 00:03:11,799
+Gostaria que você me dissesse se você... se você sente isso, se você sente essa pressão.
+
+56
+00:03:11,800 --> 00:03:14,866
+Tudo bem? E neste lado?
+
+57
+00:03:14,866 --> 00:03:17,832
+Você consegue sentir a pressão deste lado?
+
+58
+00:03:17,833 --> 00:03:21,166
+Ok. Vi que você recuou desta vez.
+
+59
+00:03:21,166 --> 00:03:24,132
+Este item nunca é marcado como "não testável".
+
+60
+00:03:24,133 --> 00:03:28,499
+Você deve testar pacientes estuporosos ou afásicos com estímulos dolorosos vigorosos,
+
+61
+00:03:28,500 --> 00:03:34,666
+como a pressão no leito ungueal, e então decidir entre 1 ou 0 com base na ocorrência de qualquer resposta.
+
+62
+00:03:34,666 --> 00:03:41,632
+Pacientes que obtiveram pontuação 3 no nível de consciência 1A receberão automaticamente pontuação 2 no item sensorial.
+

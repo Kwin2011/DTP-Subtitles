@@ -1,0 +1,1603 @@
+
+======================================================================
+SUBTITLE SPLITTING (limit=50, debug=True)
+======================================================================
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'picadas de alfinete.'
+
+[INIT] N=2, avg=34.50
+[INIT LINES] ['A percepção sensorial é testada com uma série de', 'picadas de alfinete.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'de' → next (len now 45 / avg 34.50)
+  [BALANCE] move 'série' → next (len now 39 / avg 34.50)
+  [BALANCE] move 'uma' → next (len now 35 / avg 34.50)
+  [BALANCE] move 'com' → next (len now 31 / avg 34.50)
+[AFTER BALANCE] ['A percepção sensorial é testada', 'com uma série de picadas de alfinete.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='A percepção sensorial é testada' | [1]='com uma série de picadas de alfinete.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'com' doesn't meet transfer conditions → skip
+  After F2: [0]='A percepção sensorial é testada' | [1]='com uma série de picadas de alfinete.'
+F3: 'testada' not eligible for transfer
+
+[FINAL] ['A percepção sensorial é testada', 'com uma série de picadas de alfinete.']
+1: (31) A percepção sensorial é testada
+2: (37) com uma série de picadas de alfinete.
+
+[SRT BLOCK ﻿1]
+1: (31) A percepção sensorial é testada
+2: (37) com uma série de picadas de alfinete.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'utilizada em pacientes obnubilados ou afásicos.'
+
+[INIT] N=2, avg=45.50
+[INIT LINES] ['A retirada diante de um estímulo doloroso é', 'utilizada em pacientes obnubilados ou afásicos.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['A retirada diante de um estímulo doloroso é', 'utilizada em pacientes obnubilados ou afásicos.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  F1-S2: single character 'é' → next line
+  After F1: [0]='A retirada diante de um estímulo doloroso' | [1]='é utilizada em pacientes obnubilados ou afásicos.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: first word 'é' = 1 character → skip
+F3: 'doloroso' not eligible for transfer
+
+[FINAL] ['A retirada diante de um estímulo doloroso', 'é utilizada em pacientes obnubilados ou afásicos.']
+1: (41) A retirada diante de um estímulo doloroso
+2: (49) é utilizada em pacientes obnubilados ou afásicos.
+
+[SRT BLOCK 2]
+1: (41) A retirada diante de um estímulo doloroso
+2: (49) é utilizada em pacientes obnubilados ou afásicos.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'de segurança ou de costureira.'
+
+[INIT] N=2, avg=40.50
+[INIT LINES] ['Não utilize nenhum objeto que não seja um alfinete', 'de segurança ou de costureira.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'alfinete' → next (len now 41 / avg 40.50)
+  [BALANCE] move 'um' → next (len now 38 / avg 40.50)
+[AFTER BALANCE] ['Não utilize nenhum objeto que não seja', 'um alfinete de segurança ou de costureira.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Não utilize nenhum objeto que não seja' | [1]='um alfinete de segurança ou de costureira.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'um' doesn't meet transfer conditions → skip
+  After F2: [0]='Não utilize nenhum objeto que não seja' | [1]='um alfinete de segurança ou de costureira.'
+F3: 'seja' not eligible for transfer
+
+[FINAL] ['Não utilize nenhum objeto que não seja', 'um alfinete de segurança ou de costureira.']
+1: (38) Não utilize nenhum objeto que não seja
+2: (42) um alfinete de segurança ou de costureira.
+
+[SRT BLOCK 3]
+1: (38) Não utilize nenhum objeto que não seja
+2: (42) um alfinete de segurança ou de costureira.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'quebrados ou canetas esferográficas.'
+
+[INIT] N=2, avg=40.50
+[INIT LINES] ['Não são permitidos clipes de papel, gravetos', 'quebrados ou canetas esferográficas.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'gravetos' → next (len now 35 / avg 40.50)
+[AFTER BALANCE] ['Não são permitidos clipes de papel,', 'gravetos quebrados ou canetas esferográficas.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Não são permitidos clipes de papel,' | [1]='gravetos quebrados ou canetas esferográficas.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: last word 'papel,' ends with punctuation → skip
+F3: 'papel,' ends with punctuation, next line continues → skip
+
+[FINAL] ['Não são permitidos clipes de papel,', 'gravetos quebrados ou canetas esferográficas.']
+1: (35) Não são permitidos clipes de papel,
+2: (45) gravetos quebrados ou canetas esferográficas.
+
+[SRT BLOCK 4]
+1: (35) Não são permitidos clipes de papel,
+2: (45) gravetos quebrados ou canetas esferográficas.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'proximais dos quatro membros'
+
+[INIT] N=2, avg=37.00
+[INIT LINES] ['Examine o paciente com o alfinete nas porções', 'proximais dos quatro membros']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'porções' → next (len now 37 / avg 37.00)
+[AFTER BALANCE] ['Examine o paciente com o alfinete nas', 'porções proximais dos quatro membros']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Examine o paciente com o alfinete nas' | [1]='porções proximais dos quatro membros'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'porções' doesn't meet transfer conditions → skip
+  After F2: [0]='Examine o paciente com o alfinete nas' | [1]='porções proximais dos quatro membros'
+F3: 'nas' not eligible for transfer
+
+[FINAL] ['Examine o paciente com o alfinete nas', 'porções proximais dos quatro membros']
+1: (37) Examine o paciente com o alfinete nas
+2: (36) porções proximais dos quatro membros
+
+[SRT BLOCK 5]
+1: (37) Examine o paciente com o alfinete nas
+2: (36) porções proximais dos quatro membros
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'e pergunte se o paciente sente o estímulo.'
+
+[INIT] N=1, avg=42.00
+[INIT LINES] ['e pergunte se o paciente sente o estímulo.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['e pergunte se o paciente sente o estímulo.']
+
+[FINAL] ['e pergunte se o paciente sente o estímulo.']
+1: (42) e pergunte se o paciente sente o estímulo.
+
+[SRT BLOCK 6]
+1: (42) e pergunte se o paciente sente o estímulo.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'O paciente não precisa estar de olhos fechados.'
+
+[INIT] N=1, avg=47.00
+[INIT LINES] ['O paciente não precisa estar de olhos fechados.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['O paciente não precisa estar de olhos fechados.']
+
+[FINAL] ['O paciente não precisa estar de olhos fechados.']
+1: (47) O paciente não precisa estar de olhos fechados.
+
+[SRT BLOCK 7]
+1: (47) O paciente não precisa estar de olhos fechados.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'entre os lados direito e esquerdo.'
+
+[INIT] N=2, avg=41.50
+[INIT LINES] ['Pergunte ao paciente se existe alguma assimetria', 'entre os lados direito e esquerdo.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'assimetria' → next (len now 37 / avg 41.50)
+[AFTER BALANCE] ['Pergunte ao paciente se existe alguma', 'assimetria entre os lados direito e esquerdo.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Pergunte ao paciente se existe alguma' | [1]='assimetria entre os lados direito e esquerdo.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'assimetria' doesn't meet transfer conditions → skip
+  After F2: [0]='Pergunte ao paciente se existe alguma' | [1]='assimetria entre os lados direito e esquerdo.'
+F3: 'alguma' not eligible for transfer
+
+[FINAL] ['Pergunte ao paciente se existe alguma', 'assimetria entre os lados direito e esquerdo.']
+1: (37) Pergunte ao paciente se existe alguma
+2: (45) assimetria entre os lados direito e esquerdo.
+
+[SRT BLOCK 8]
+1: (37) Pergunte ao paciente se existe alguma
+2: (45) assimetria entre os lados direito e esquerdo.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'interpretação.'
+
+[INIT] N=2, avg=50.00
+[INIT LINES] ['Perguntar se o paciente sente a picada nítida ou', 'amortecimento só gera confusão e m[a', 'interpretação.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Perguntar se o paciente sente a picada nítida ou', 'amortecimento só gera confusão e m[a', 'interpretação.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Perguntar se o paciente sente a picada nítida ou' | [1]='amortecimento só gera confusão e m[a'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'amortecimento' doesn't meet transfer conditions → skip
+  After F2: [0]='Perguntar se o paciente sente a picada nítida ou' | [1]='amortecimento só gera confusão e m[a'
+F3: moved 'ou' due to large length difference (12)
+
+=== ITER 1 ===
+
+[F1] Processing line 1 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [1]='ou amortecimento só gera confusão e m[a' | [2]='interpretação.'
+
+[F2] Processing line 1 (pulling from next line)
+  F2: 'interpretação.' doesn't meet transfer conditions → skip
+  F2: contextual pulling 'm[a' → next line
+  After F2: [1]='ou amortecimento só gera confusão e' | [2]='m[a interpretação.'
+F3: moved 'e' due to large length difference (17)
+
+[FINAL] ['Perguntar se o paciente sente a picada nítida', 'ou amortecimento só gera confusão', 'e m[a interpretação.']
+1: (45) Perguntar se o paciente sente a picada nítida
+2: (33) ou amortecimento só gera confusão
+3: (20) e m[a interpretação.
+
+[SRT BLOCK 9]
+1: (45) Perguntar se o paciente sente a picada nítida
+2: (33) ou amortecimento só gera confusão
+3: (20) e m[a interpretação.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'há alguma diferença.'
+
+[INIT] N=3, avg=39.00
+[INIT LINES] ['Para otimizar a reprodutibilidade, peça para o', 'paciente apenas comparar os dois lados e dizer se', 'há alguma diferença.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'o' → next (len now 44 / avg 39.00)
+  [BALANCE] move 'para' → next (len now 39 / avg 39.00)
+  [BALANCE] move 'se' → next (len now 53 / avg 39.00)
+  [BALANCE] move 'dizer' → next (len now 47 / avg 39.00)
+  [BALANCE] move 'e' → next (len now 45 / avg 39.00)
+  [BALANCE] move 'lados' → next (len now 39 / avg 39.00)
+[AFTER BALANCE] ['Para otimizar a reprodutibilidade, peça', 'para o paciente apenas comparar os dois', 'lados e dizer se há alguma diferença.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  F1-S2: punctuation rule → moved 'peça'
+  After F1: [0]='Para otimizar a reprodutibilidade,' | [1]='peça para o paciente apenas comparar os dois'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: last word 'reprodutibilidade,' ends with punctuation → skip
+F3: 'reprodutibilidade,' ends with punctuation, next line continues → skip
+
+=== ITER 1 ===
+
+[F1] Processing line 1 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [1]='peça para o paciente apenas comparar os dois' | [2]='lados e dizer se há alguma diferença.'
+
+[F2] Processing line 1 (pulling from next line)
+  F2: 'lados' doesn't meet transfer conditions → skip
+  After F2: [1]='peça para o paciente apenas comparar os dois' | [2]='lados e dizer se há alguma diferença.'
+F3: moved 'dois' due to large length difference (7)
+
+[FINAL] ['Para otimizar a reprodutibilidade,', 'peça para o paciente apenas comparar os', 'dois lados e dizer se há alguma diferença.']
+1: (34) Para otimizar a reprodutibilidade,
+2: (39) peça para o paciente apenas comparar os
+3: (42) dois lados e dizer se há alguma diferença.
+
+[SRT BLOCK 10]
+1: (34) Para otimizar a reprodutibilidade,
+2: (39) peça para o paciente apenas comparar os
+3: (42) dois lados e dizer se há alguma diferença.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'expressões faciais.'
+
+[INIT] N=3, avg=37.33
+[INIT LINES] ['Em pacientes confusos, afásicos ou com nível de', 'consciência reduzido, observe a simetria das', 'expressões faciais.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'de' → next (len now 44 / avg 37.33)
+  [BALANCE] move 'nível' → next (len now 38 / avg 37.33)
+  [BALANCE] move 'com' → next (len now 34 / avg 37.33)
+  [BALANCE] move 'das' → next (len now 53 / avg 37.33)
+  [BALANCE] move 'simetria' → next (len now 44 / avg 37.33)
+  [BALANCE] move 'a' → next (len now 42 / avg 37.33)
+  [BALANCE] move 'observe' → next (len now 34 / avg 37.33)
+[AFTER BALANCE] ['Em pacientes confusos, afásicos ou', 'com nível de consciência reduzido,', 'observe a simetria das expressões faciais.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Em pacientes confusos, afásicos ou' | [1]='com nível de consciência reduzido,'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'com' doesn't meet transfer conditions → skip
+  After F2: [0]='Em pacientes confusos, afásicos ou' | [1]='com nível de consciência reduzido,'
+F3: 'ou' not eligible for transfer
+
+=== ITER 1 ===
+
+[F1] Processing line 1 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [1]='com nível de consciência reduzido,' | [2]='observe a simetria das expressões faciais.'
+
+[F2] Processing line 1 (pulling from next line)
+  F2: last word 'reduzido,' ends with punctuation → skip
+F3: 'reduzido,' ends with punctuation, next line continues → skip
+
+[FINAL] ['Em pacientes confusos, afásicos ou', 'com nível de consciência reduzido,', 'observe a simetria das expressões faciais.']
+1: (34) Em pacientes confusos, afásicos ou
+2: (34) com nível de consciência reduzido,
+3: (42) observe a simetria das expressões faciais.
+
+[SRT BLOCK 11]
+1: (34) Em pacientes confusos, afásicos ou
+2: (34) com nível de consciência reduzido,
+3: (42) observe a simetria das expressões faciais.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'e a resposta ao estímulo doloroso.'
+
+[INIT] N=1, avg=34.00
+[INIT LINES] ['e a resposta ao estímulo doloroso.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['e a resposta ao estímulo doloroso.']
+
+[FINAL] ['e a resposta ao estímulo doloroso.']
+1: (34) e a resposta ao estímulo doloroso.
+
+[SRT BLOCK 12]
+1: (34) e a resposta ao estímulo doloroso.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'pontuada.'
+
+[INIT] N=2, avg=30.00
+[INIT LINES] ['Apenas a perda de sensibilidade atribuída ao AVC é', 'pontuada.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'é' → next (len now 48 / avg 30.00)
+  [BALANCE] move 'AVC' → next (len now 44 / avg 30.00)
+  [BALANCE] move 'ao' → next (len now 41 / avg 30.00)
+  [BALANCE] move 'atribuída' → next (len now 31 / avg 30.00)
+  [BALANCE] move 'sensibilidade' → next (len now 17 / avg 30.00)
+[AFTER BALANCE] ['Apenas a perda de', 'sensibilidade atribuída ao AVC é pontuada.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Apenas a perda de' | [1]='sensibilidade atribuída ao AVC é pontuada.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'sensibilidade' doesn't meet transfer conditions → skip
+  After F2: [0]='Apenas a perda de' | [1]='sensibilidade atribuída ao AVC é pontuada.'
+F3: 'de' not eligible for transfer
+
+[FINAL] ['Apenas a perda de', 'sensibilidade atribuída ao AVC é pontuada.']
+1: (17) Apenas a perda de
+2: (42) sensibilidade atribuída ao AVC é pontuada.
+
+[SRT BLOCK 13]
+1: (17) Apenas a perda de
+2: (42) sensibilidade atribuída ao AVC é pontuada.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'precisão a perda hemi-sensorial.'
+
+[INIT] N=3, avg=43.67
+[INIT LINES] ['Examine quantas áreas do corpo (braços, pernas,', 'tronco e rosto) forem necessárias para avaliar com', 'precisão a perda hemi-sensorial.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'pernas,' → next (len now 39 / avg 43.67)
+  [BALANCE] move 'com' → next (len now 54 / avg 43.67)
+  [BALANCE] move 'avaliar' → next (len now 46 / avg 43.67)
+  [BALANCE] move 'para' → next (len now 41 / avg 43.67)
+[AFTER BALANCE] ['Examine quantas áreas do corpo (braços,', 'pernas, tronco e rosto) forem necessárias', 'para avaliar com precisão a perda hemi-sensorial.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Examine quantas áreas do corpo (braços,' | [1]='pernas, tronco e rosto) forem necessárias'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: last word '(braços,' ends with punctuation → skip
+F3: '(braços,' ends with punctuation, next line continues → skip
+
+=== ITER 1 ===
+
+[F1] Processing line 1 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [1]='pernas, tronco e rosto) forem necessárias' | [2]='para avaliar com precisão a perda hemi-sensorial.'
+
+[F2] Processing line 1 (pulling from next line)
+  F2: 'para' doesn't meet transfer conditions → skip
+  After F2: [1]='pernas, tronco e rosto) forem necessárias' | [2]='para avaliar com precisão a perda hemi-sensorial.'
+F3: 'necessárias' not eligible for transfer
+
+[FINAL] ['Examine quantas áreas do corpo (braços,', 'pernas, tronco e rosto) forem necessárias', 'para avaliar com precisão a perda hemi-sensorial.']
+1: (39) Examine quantas áreas do corpo (braços,
+2: (41) pernas, tronco e rosto) forem necessárias
+3: (49) para avaliar com precisão a perda hemi-sensorial.
+
+[SRT BLOCK 14]
+1: (39) Examine quantas áreas do corpo (braços,
+2: (41) pernas, tronco e rosto) forem necessárias
+3: (49) para avaliar com precisão a perda hemi-sensorial.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'extremidades dos membros, como mãos ou pés,'
+
+[INIT] N=2, avg=41.50
+[INIT LINES] ['Ao testar a sensibilidade, não teste as', 'extremidades dos membros, como mãos ou pés,']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Ao testar a sensibilidade, não teste as', 'extremidades dos membros, como mãos ou pés,']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Ao testar a sensibilidade, não teste as' | [1]='extremidades dos membros, como mãos ou pés,'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'extremidades' doesn't meet transfer conditions → skip
+  After F2: [0]='Ao testar a sensibilidade, não teste as' | [1]='extremidades dos membros, como mãos ou pés,'
+F3: 'as' not eligible for transfer
+
+[FINAL] ['Ao testar a sensibilidade, não teste as', 'extremidades dos membros, como mãos ou pés,']
+1: (39) Ao testar a sensibilidade, não teste as
+2: (43) extremidades dos membros, como mãos ou pés,
+
+[SRT BLOCK 15]
+1: (39) Ao testar a sensibilidade, não teste as
+2: (43) extremidades dos membros, como mãos ou pés,
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'neuropatia não relacionada.'
+
+[INIT] N=2, avg=35.50
+[INIT LINES] ['pois a resposta pode ser confundida por uma', 'neuropatia não relacionada.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'uma' → next (len now 39 / avg 35.50)
+  [BALANCE] move 'por' → next (len now 35 / avg 35.50)
+[AFTER BALANCE] ['pois a resposta pode ser confundida', 'por uma neuropatia não relacionada.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='pois a resposta pode ser confundida' | [1]='por uma neuropatia não relacionada.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'por' doesn't meet transfer conditions → skip
+  After F2: [0]='pois a resposta pode ser confundida' | [1]='por uma neuropatia não relacionada.'
+F3: 'confundida' not eligible for transfer
+
+[FINAL] ['pois a resposta pode ser confundida', 'por uma neuropatia não relacionada.']
+1: (35) pois a resposta pode ser confundida
+2: (35) por uma neuropatia não relacionada.
+
+[SRT BLOCK 16]
+1: (35) pois a resposta pode ser confundida
+2: (35) por uma neuropatia não relacionada.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'faça o teste por cima da roupa.'
+
+[INIT] N=2, avg=39.00
+[INIT LINES] ['A menos que seja absolutamente necessário, não', 'faça o teste por cima da roupa.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'não' → next (len now 42 / avg 39.00)
+  [BALANCE] move 'necessário,' → next (len now 30 / avg 39.00)
+[AFTER BALANCE] ['A menos que seja absolutamente', 'necessário, não faça o teste por cima da roupa.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='A menos que seja absolutamente' | [1]='necessário, não faça o teste por cima da roupa.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'necessário,' doesn't meet transfer conditions → skip
+  After F2: [0]='A menos que seja absolutamente' | [1]='necessário, não faça o teste por cima da roupa.'
+F3: 'absolutamente' not eligible for transfer
+
+[FINAL] ['A menos que seja absolutamente', 'necessário, não faça o teste por cima da roupa.']
+1: (30) A menos que seja absolutamente
+2: (47) necessário, não faça o teste por cima da roupa.
+
+[SRT BLOCK 17]
+1: (30) A menos que seja absolutamente
+2: (47) necessário, não faça o teste por cima da roupa.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'sensível.'
+
+[INIT] N=3, avg=33.67
+[INIT LINES] ['Vou tocar você no lado direitp ou esquerdo e você', 'me diz se são iguais ou se um lado é mais', 'sensível.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'você' → next (len now 44 / avg 33.67)
+  [BALANCE] move 'e' → next (len now 42 / avg 33.67)
+  [BALANCE] move 'esquerdo' → next (len now 33 / avg 33.67)
+  [BALANCE] move 'mais' → next (len now 52 / avg 33.67)
+  [BALANCE] move 'é' → next (len now 50 / avg 33.67)
+  [BALANCE] move 'lado' → next (len now 45 / avg 33.67)
+  [BALANCE] move 'um' → next (len now 42 / avg 33.67)
+  [BALANCE] move 'se' → next (len now 39 / avg 33.67)
+  [BALANCE] move 'ou' → next (len now 36 / avg 33.67)
+  [BALANCE] move 'iguais' → next (len now 29 / avg 33.67)
+[AFTER BALANCE] ['Vou tocar você no lado direitp ou', 'esquerdo e você me diz se são', 'iguais ou se um lado é mais sensível.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Vou tocar você no lado direitp ou' | [1]='esquerdo e você me diz se são'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'esquerdo' doesn't meet transfer conditions → skip
+  After F2: [0]='Vou tocar você no lado direitp ou' | [1]='esquerdo e você me diz se são'
+F3: moved 'ou' due to large length difference (4)
+
+=== ITER 1 ===
+
+[F1] Processing line 1 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [1]='ou esquerdo e você me diz se são' | [2]='iguais ou se um lado é mais sensível.'
+
+[F2] Processing line 1 (pulling from next line)
+  F2: 'iguais' doesn't meet transfer conditions → skip
+  After F2: [1]='ou esquerdo e você me diz se são' | [2]='iguais ou se um lado é mais sensível.'
+F3: 'são' not eligible for transfer
+
+[FINAL] ['Vou tocar você no lado direitp', 'ou esquerdo e você me diz se são', 'iguais ou se um lado é mais sensível.']
+1: (30) Vou tocar você no lado direitp
+2: (32) ou esquerdo e você me diz se são
+3: (37) iguais ou se um lado é mais sensível.
+
+[SRT BLOCK 18]
+1: (30) Vou tocar você no lado direitp
+2: (32) ou esquerdo e você me diz se são
+3: (37) iguais ou se um lado é mais sensível.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Ok.'
+
+[INIT] N=1, avg=3.00
+[INIT LINES] ['Ok.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Ok.']
+
+[FINAL] ['Ok.']
+1: (3) Ok.
+
+[SRT BLOCK 19]
+1: (3) Ok.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'é mais nítido?'
+
+[INIT] N=2, avg=32.00
+[INIT LINES] ['Começando pelo seu rosto: direita, esquerda, qual', 'é mais nítido?']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'qual' → next (len now 44 / avg 32.00)
+  [BALANCE] move 'esquerda,' → next (len now 34 / avg 32.00)
+  [BALANCE] move 'direita,' → next (len now 25 / avg 32.00)
+[AFTER BALANCE] ['Começando pelo seu rosto:', 'direita, esquerda, qual é mais nítido?']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Começando pelo seu rosto:' | [1]='direita, esquerda, qual é mais nítido?'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: last word 'rosto:' ends with punctuation → skip
+F3: 'rosto:' ends with punctuation, next line continues → skip
+
+[FINAL] ['Começando pelo seu rosto:', 'direita, esquerda, qual é mais nítido?']
+1: (25) Começando pelo seu rosto:
+2: (38) direita, esquerda, qual é mais nítido?
+
+[SRT BLOCK 20]
+1: (25) Começando pelo seu rosto:
+2: (38) direita, esquerda, qual é mais nítido?
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Ou são a mesma coisa?'
+
+[INIT] N=1, avg=21.00
+[INIT LINES] ['Ou são a mesma coisa?']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Ou são a mesma coisa?']
+
+[FINAL] ['Ou são a mesma coisa?']
+1: (21) Ou são a mesma coisa?
+
+[SRT BLOCK 21]
+1: (21) Ou são a mesma coisa?
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Mais ou menos a mesma coisa.'
+
+[INIT] N=1, avg=28.00
+[INIT LINES] ['Mais ou menos a mesma coisa.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Mais ou menos a mesma coisa.']
+
+[FINAL] ['Mais ou menos a mesma coisa.']
+1: (28) Mais ou menos a mesma coisa.
+
+[SRT BLOCK 22]
+1: (28) Mais ou menos a mesma coisa.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'experimentar nas mãos:'
+
+[INIT] N=2, avg=32.00
+[INIT LINES] ['Mais ou menos a mesma coisa, certo. Vamos', 'experimentar nas mãos:']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'Vamos' → next (len now 35 / avg 32.00)
+  [BALANCE] move 'certo.' → next (len now 28 / avg 32.00)
+[AFTER BALANCE] ['Mais ou menos a mesma coisa,', 'certo. Vamos experimentar nas mãos:']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Mais ou menos a mesma coisa,' | [1]='certo. Vamos experimentar nas mãos:'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: last word 'coisa,' ends with punctuation → skip
+F3: 'coisa,' ends with punctuation, next line continues → skip
+
+[FINAL] ['Mais ou menos a mesma coisa,', 'certo. Vamos experimentar nas mãos:']
+1: (28) Mais ou menos a mesma coisa,
+2: (35) certo. Vamos experimentar nas mãos:
+
+[SRT BLOCK 23]
+1: (28) Mais ou menos a mesma coisa,
+2: (35) certo. Vamos experimentar nas mãos:
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'mesma coisa?'
+
+[INIT] N=2, avg=30.00
+[INIT LINES] ['direita, esquerda, qual é mais nítido? Ou são a', 'mesma coisa?']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'a' → next (len now 45 / avg 30.00)
+  [BALANCE] move 'são' → next (len now 41 / avg 30.00)
+  [BALANCE] move 'Ou' → next (len now 38 / avg 30.00)
+  [BALANCE] move 'nítido?' → next (len now 30 / avg 30.00)
+[AFTER BALANCE] ['direita, esquerda, qual é mais', 'nítido? Ou são a mesma coisa?']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='direita, esquerda, qual é mais' | [1]='nítido? Ou são a mesma coisa?'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: pulled 'nítido?' → current line (len now 38)
+  After F2: [0]='direita, esquerda, qual é mais nítido?' | [1]='Ou são a mesma coisa?'
+F3: moved 'nítido?' due to punctuation and length
+
+[FINAL] ['direita, esquerda, qual é mais', 'nítido? Ou são a mesma coisa?']
+1: (30) direita, esquerda, qual é mais
+2: (29) nítido? Ou são a mesma coisa?
+
+[SRT BLOCK 24]
+1: (30) direita, esquerda, qual é mais
+2: (29) nítido? Ou são a mesma coisa?
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Mais amortecido.'
+
+[INIT] N=1, avg=16.00
+[INIT LINES] ['Mais amortecido.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Mais amortecido.']
+
+[FINAL] ['Mais amortecido.']
+1: (16) Mais amortecido.
+
+[SRT BLOCK 25]
+1: (16) Mais amortecido.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Mais amortecido na direita, ok.'
+
+[INIT] N=1, avg=31.00
+[INIT LINES] ['Mais amortecido na direita, ok.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Mais amortecido na direita, ok.']
+
+[FINAL] ['Mais amortecido na direita, ok.']
+1: (31) Mais amortecido na direita, ok.
+
+[SRT BLOCK 26]
+1: (31) Mais amortecido na direita, ok.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Vamos testar suas pernas: qual é mais nítido?'
+
+[INIT] N=1, avg=45.00
+[INIT LINES] ['Vamos testar suas pernas: qual é mais nítido?']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Vamos testar suas pernas: qual é mais nítido?']
+
+[FINAL] ['Vamos testar suas pernas: qual é mais nítido?']
+1: (45) Vamos testar suas pernas: qual é mais nítido?
+
+[SRT BLOCK 27]
+1: (45) Vamos testar suas pernas: qual é mais nítido?
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Ou são a mesma coisa?'
+
+[INIT] N=1, avg=21.00
+[INIT LINES] ['Ou são a mesma coisa?']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Ou são a mesma coisa?']
+
+[FINAL] ['Ou são a mesma coisa?']
+1: (21) Ou são a mesma coisa?
+
+[SRT BLOCK 28]
+1: (21) Ou são a mesma coisa?
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Ah, um lado é mais amortecido, o lado direito.'
+
+[INIT] N=1, avg=46.00
+[INIT LINES] ['Ah, um lado é mais amortecido, o lado direito.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Ah, um lado é mais amortecido, o lado direito.']
+
+[FINAL] ['Ah, um lado é mais amortecido, o lado direito.']
+1: (46) Ah, um lado é mais amortecido, o lado direito.
+
+[SRT BLOCK 29]
+1: (46) Ah, um lado é mais amortecido, o lado direito.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'obteve uma pontuação de 1.'
+
+[INIT] N=2, avg=36.00
+[INIT LINES] ['Para o item número 8 da escala, este paciente', 'obteve uma pontuação de 1.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'paciente' → next (len now 36 / avg 36.00)
+[AFTER BALANCE] ['Para o item número 8 da escala, este', 'paciente obteve uma pontuação de 1.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  F1-S2: punctuation rule → moved 'este'
+  After F1: [0]='Para o item número 8 da escala,' | [1]='este paciente obteve uma pontuação de 1.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: last word 'escala,' ends with punctuation → skip
+F3: 'escala,' ends with punctuation, next line continues → skip
+
+[FINAL] ['Para o item número 8 da escala,', 'este paciente obteve uma pontuação de 1.']
+1: (31) Para o item número 8 da escala,
+2: (40) este paciente obteve uma pontuação de 1.
+
+[SRT BLOCK 30]
+1: (31) Para o item número 8 da escala,
+2: (40) este paciente obteve uma pontuação de 1.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'pontuado.'
+
+[INIT] N=2, avg=25.50
+[INIT LINES] ['Vamos analisar como esse item da escala é', 'pontuado.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'é' → next (len now 39 / avg 25.50)
+  [BALANCE] move 'escala' → next (len now 32 / avg 25.50)
+  [BALANCE] move 'da' → next (len now 29 / avg 25.50)
+  [BALANCE] move 'item' → next (len now 24 / avg 25.50)
+[AFTER BALANCE] ['Vamos analisar como esse', 'item da escala é pontuado.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Vamos analisar como esse' | [1]='item da escala é pontuado.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'item' doesn't meet transfer conditions → skip
+  After F2: [0]='Vamos analisar como esse' | [1]='item da escala é pontuado.'
+F3: 'esse' not eligible for transfer
+
+[FINAL] ['Vamos analisar como esse', 'item da escala é pontuado.']
+1: (24) Vamos analisar como esse
+2: (26) item da escala é pontuado.
+
+[SRT BLOCK 31]
+1: (24) Vamos analisar como esse
+2: (26) item da escala é pontuado.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'evidência de perda sensorial.'
+
+[INIT] N=2, avg=35.50
+[INIT LINES] ['Atribua uma pontuação 0 quando não houver', 'evidência de perda sensorial.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'houver' → next (len now 34 / avg 35.50)
+[AFTER BALANCE] ['Atribua uma pontuação 0 quando não', 'houver evidência de perda sensorial.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Atribua uma pontuação 0 quando não' | [1]='houver evidência de perda sensorial.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'houver' doesn't meet transfer conditions → skip
+  After F2: [0]='Atribua uma pontuação 0 quando não' | [1]='houver evidência de perda sensorial.'
+F3: 'não' not eligible for transfer
+
+[FINAL] ['Atribua uma pontuação 0 quando não', 'houver evidência de perda sensorial.']
+1: (34) Atribua uma pontuação 0 quando não
+2: (36) houver evidência de perda sensorial.
+
+[SRT BLOCK 32]
+1: (34) Atribua uma pontuação 0 quando não
+2: (36) houver evidência de perda sensorial.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'moderada.'
+
+[INIT] N=2, avg=27.50
+[INIT LINES] ['Atribua uma pontuação de 1 para perda leve ou', 'moderada.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'ou' → next (len now 42 / avg 27.50)
+  [BALANCE] move 'leve' → next (len now 37 / avg 27.50)
+  [BALANCE] move 'perda' → next (len now 31 / avg 27.50)
+  [BALANCE] move 'para' → next (len now 26 / avg 27.50)
+[AFTER BALANCE] ['Atribua uma pontuação de 1', 'para perda leve ou moderada.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  F1-S2: single character '1' → next line
+  After F1: [0]='Atribua uma pontuação de' | [1]='1 para perda leve ou moderada.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: first word '1' = 1 character → skip
+F3: 'de' not eligible for transfer
+
+[FINAL] ['Atribua uma pontuação de', '1 para perda leve ou moderada.']
+1: (24) Atribua uma pontuação de
+2: (30) 1 para perda leve ou moderada.
+
+[SRT BLOCK 33]
+1: (24) Atribua uma pontuação de
+2: (30) 1 para perda leve ou moderada.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'alfinete.'
+
+[INIT] N=2, avg=25.50
+[INIT LINES] ['Vou testar agora o quanto você sente este', 'alfinete.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'este' → next (len now 36 / avg 25.50)
+  [BALANCE] move 'sente' → next (len now 30 / avg 25.50)
+  [BALANCE] move 'você' → next (len now 25 / avg 25.50)
+[AFTER BALANCE] ['Vou testar agora o quanto', 'você sente este alfinete.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Vou testar agora o quanto' | [1]='você sente este alfinete.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'você' doesn't meet transfer conditions → skip
+  After F2: [0]='Vou testar agora o quanto' | [1]='você sente este alfinete.'
+F3: 'quanto' not eligible for transfer
+
+[FINAL] ['Vou testar agora o quanto', 'você sente este alfinete.']
+1: (25) Vou testar agora o quanto
+2: (25) você sente este alfinete.
+
+[SRT BLOCK 34]
+1: (25) Vou testar agora o quanto
+2: (25) você sente este alfinete.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'nítido, o lado esquerdo ou se são iguais.'
+
+[INIT] N=2, avg=44.50
+[INIT LINES] ['Quero que você me diga se o lado direito é mais', 'nítido, o lado esquerdo ou se são iguais.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'mais' → next (len now 42 / avg 44.50)
+[AFTER BALANCE] ['Quero que você me diga se o lado direito é', 'mais nítido, o lado esquerdo ou se são iguais.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  F1-S2: single character 'é' → next line
+  After F1: [0]='Quero que você me diga se o lado direito' | [1]='é mais nítido, o lado esquerdo ou se são iguais.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: first word 'é' = 1 character → skip
+F3: 'direito' not eligible for transfer
+
+[FINAL] ['Quero que você me diga se o lado direito', 'é mais nítido, o lado esquerdo ou se são iguais.']
+1: (40) Quero que você me diga se o lado direito
+2: (48) é mais nítido, o lado esquerdo ou se são iguais.
+
+[SRT BLOCK 35]
+1: (40) Quero que você me diga se o lado direito
+2: (48) é mais nítido, o lado esquerdo ou se são iguais.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Ok.'
+
+[INIT] N=1, avg=3.00
+[INIT LINES] ['Ok.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Ok.']
+
+[FINAL] ['Ok.']
+1: (3) Ok.
+
+[SRT BLOCK 36]
+1: (3) Ok.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Começando pelo seu rosto.'
+
+[INIT] N=1, avg=25.00
+[INIT LINES] ['Começando pelo seu rosto.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Começando pelo seu rosto.']
+
+[FINAL] ['Começando pelo seu rosto.']
+1: (25) Começando pelo seu rosto.
+
+[SRT BLOCK 37]
+1: (25) Começando pelo seu rosto.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Qual lado é mais nítido?'
+
+[INIT] N=1, avg=24.00
+[INIT LINES] ['Qual lado é mais nítido?']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Qual lado é mais nítido?']
+
+[FINAL] ['Qual lado é mais nítido?']
+1: (24) Qual lado é mais nítido?
+
+[SRT BLOCK 38]
+1: (24) Qual lado é mais nítido?
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Esquerdo.'
+
+[INIT] N=1, avg=9.00
+[INIT LINES] ['Esquerdo.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Esquerdo.']
+
+[FINAL] ['Esquerdo.']
+1: (9) Esquerdo.
+
+[SRT BLOCK 39]
+1: (9) Esquerdo.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Qual lado é mais nítido?'
+
+[INIT] N=1, avg=24.00
+[INIT LINES] ['Qual lado é mais nítido?']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Qual lado é mais nítido?']
+
+[FINAL] ['Qual lado é mais nítido?']
+1: (24) Qual lado é mais nítido?
+
+[SRT BLOCK 40]
+1: (24) Qual lado é mais nítido?
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Esquerdo.'
+
+[INIT] N=1, avg=9.00
+[INIT LINES] ['Esquerdo.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Esquerdo.']
+
+[FINAL] ['Esquerdo.']
+1: (9) Esquerdo.
+
+[SRT BLOCK 41]
+1: (9) Esquerdo.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Braços: qual lado é mais nítido?'
+
+[INIT] N=1, avg=32.00
+[INIT LINES] ['Braços: qual lado é mais nítido?']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Braços: qual lado é mais nítido?']
+
+[FINAL] ['Braços: qual lado é mais nítido?']
+1: (32) Braços: qual lado é mais nítido?
+
+[SRT BLOCK 42]
+1: (32) Braços: qual lado é mais nítido?
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Mais ou menos a mesma coisa.'
+
+[INIT] N=1, avg=28.00
+[INIT LINES] ['Mais ou menos a mesma coisa.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Mais ou menos a mesma coisa.']
+
+[FINAL] ['Mais ou menos a mesma coisa.']
+1: (28) Mais ou menos a mesma coisa.
+
+[SRT BLOCK 43]
+1: (28) Mais ou menos a mesma coisa.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Mais ou menos a mesma coisa? Ok.'
+
+[INIT] N=1, avg=32.00
+[INIT LINES] ['Mais ou menos a mesma coisa? Ok.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Mais ou menos a mesma coisa? Ok.']
+
+[FINAL] ['Mais ou menos a mesma coisa? Ok.']
+1: (32) Mais ou menos a mesma coisa? Ok.
+
+[SRT BLOCK 44]
+1: (32) Mais ou menos a mesma coisa? Ok.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Agora vamos para as pernas.'
+
+[INIT] N=1, avg=27.00
+[INIT LINES] ['Agora vamos para as pernas.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Agora vamos para as pernas.']
+
+[FINAL] ['Agora vamos para as pernas.']
+1: (27) Agora vamos para as pernas.
+
+[SRT BLOCK 45]
+1: (27) Agora vamos para as pernas.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'O lado esquerdo é mais nítido.'
+
+[INIT] N=1, avg=30.00
+[INIT LINES] ['O lado esquerdo é mais nítido.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['O lado esquerdo é mais nítido.']
+
+[FINAL] ['O lado esquerdo é mais nítido.']
+1: (30) O lado esquerdo é mais nítido.
+
+[SRT BLOCK 46]
+1: (30) O lado esquerdo é mais nítido.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'O lado esquerdo é mais nítido.'
+
+[INIT] N=1, avg=30.00
+[INIT LINES] ['O lado esquerdo é mais nítido.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['O lado esquerdo é mais nítido.']
+
+[FINAL] ['O lado esquerdo é mais nítido.']
+1: (30) O lado esquerdo é mais nítido.
+
+[SRT BLOCK 47]
+1: (30) O lado esquerdo é mais nítido.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'confirmarem perdas graves.'
+
+[INIT] N=2, avg=37.00
+[INIT LINES] ['Atribua uma pontuação de 2 quando as evidências', 'confirmarem perdas graves.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'evidências' → next (len now 36 / avg 37.00)
+[AFTER BALANCE] ['Atribua uma pontuação de 2 quando as', 'evidências confirmarem perdas graves.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Atribua uma pontuação de 2 quando as' | [1]='evidências confirmarem perdas graves.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'evidências' doesn't meet transfer conditions → skip
+  After F2: [0]='Atribua uma pontuação de 2 quando as' | [1]='evidências confirmarem perdas graves.'
+F3: 'as' not eligible for transfer
+
+[FINAL] ['Atribua uma pontuação de 2 quando as', 'evidências confirmarem perdas graves.']
+1: (36) Atribua uma pontuação de 2 quando as
+2: (37) evidências confirmarem perdas graves.
+
+[SRT BLOCK 48]
+1: (36) Atribua uma pontuação de 2 quando as
+2: (37) evidências confirmarem perdas graves.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'sensibilidade.'
+
+[INIT] N=3, avg=36.67
+[INIT LINES] ['Atribua uma nota 2 apenas quando for possível', 'demonstrar claramente uma perda grave ou total da', 'sensibilidade.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'possível' → next (len now 36 / avg 36.67)
+  [BALANCE] move 'da' → next (len now 55 / avg 36.67)
+  [BALANCE] move 'total' → next (len now 49 / avg 36.67)
+  [BALANCE] move 'ou' → next (len now 46 / avg 36.67)
+  [BALANCE] move 'grave' → next (len now 40 / avg 36.67)
+  [BALANCE] move 'perda' → next (len now 34 / avg 36.67)
+[AFTER BALANCE] ['Atribua uma nota 2 apenas quando for', 'possível demonstrar claramente uma', 'perda grave ou total da sensibilidade.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Atribua uma nota 2 apenas quando for' | [1]='possível demonstrar claramente uma'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'possível' doesn't meet transfer conditions → skip
+  After F2: [0]='Atribua uma nota 2 apenas quando for' | [1]='possível demonstrar claramente uma'
+F3: 'for' not eligible for transfer
+
+=== ITER 1 ===
+
+[F1] Processing line 1 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [1]='possível demonstrar claramente uma' | [2]='perda grave ou total da sensibilidade.'
+
+[F2] Processing line 1 (pulling from next line)
+  F2: 'perda' doesn't meet transfer conditions → skip
+  After F2: [1]='possível demonstrar claramente uma' | [2]='perda grave ou total da sensibilidade.'
+F3: 'uma' not eligible for transfer
+
+[FINAL] ['Atribua uma nota 2 apenas quando for', 'possível demonstrar claramente uma', 'perda grave ou total da sensibilidade.']
+1: (36) Atribua uma nota 2 apenas quando for
+2: (34) possível demonstrar claramente uma
+3: (38) perda grave ou total da sensibilidade.
+
+[SRT BLOCK 49]
+1: (36) Atribua uma nota 2 apenas quando for
+2: (34) possível demonstrar claramente uma
+3: (38) perda grave ou total da sensibilidade.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'sensibilidade, também obtêm uma pontuação de 2.'
+
+[INIT] N=3, avg=47.33
+[INIT LINES] ['Pacientes com acidente vascular cerebral no tronco', 'cerebral, que apresentam perda bilateral de', 'sensibilidade, também obtêm uma pontuação de 2.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'tronco' → next (len now 43 / avg 47.33)
+  [BALANCE] move 'de' → next (len now 47 / avg 47.33)
+[AFTER BALANCE] ['Pacientes com acidente vascular cerebral no', 'tronco cerebral, que apresentam perda bilateral', 'de sensibilidade, também obtêm uma pontuação de 2.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Pacientes com acidente vascular cerebral no' | [1]='tronco cerebral, que apresentam perda bilateral'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'tronco' doesn't meet transfer conditions → skip
+  After F2: [0]='Pacientes com acidente vascular cerebral no' | [1]='tronco cerebral, que apresentam perda bilateral'
+F3: 'no' not eligible for transfer
+
+=== ITER 1 ===
+
+[F1] Processing line 1 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [1]='tronco cerebral, que apresentam perda bilateral' | [2]='de sensibilidade, também obtêm uma pontuação de 2.'
+
+[F2] Processing line 1 (pulling from next line)
+  F2: 'de' doesn't meet transfer conditions → skip
+  After F2: [1]='tronco cerebral, que apresentam perda bilateral' | [2]='de sensibilidade, também obtêm uma pontuação de 2.'
+F3: 'bilateral' not eligible for transfer
+
+[FINAL] ['Pacientes com acidente vascular cerebral no', 'tronco cerebral, que apresentam perda bilateral', 'de sensibilidade, também obtêm uma pontuação de 2.']
+1: (43) Pacientes com acidente vascular cerebral no
+2: (47) tronco cerebral, que apresentam perda bilateral
+3: (50) de sensibilidade, também obtêm uma pontuação de 2.
+
+[SRT BLOCK 50]
+1: (43) Pacientes com acidente vascular cerebral no
+2: (47) tronco cerebral, que apresentam perda bilateral
+3: (50) de sensibilidade, também obtêm uma pontuação de 2.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Gostaria de ver se você tem alguma sensação.'
+
+[INIT] N=1, avg=44.00
+[INIT LINES] ['Gostaria de ver se você tem alguma sensação.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Gostaria de ver se você tem alguma sensação.']
+
+[FINAL] ['Gostaria de ver se você tem alguma sensação.']
+1: (44) Gostaria de ver se você tem alguma sensação.
+
+[SRT BLOCK 51]
+1: (44) Gostaria de ver se você tem alguma sensação.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Posso tocar você com este alfinete?'
+
+[INIT] N=1, avg=35.00
+[INIT LINES] ['Posso tocar você com este alfinete?']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Posso tocar você com este alfinete?']
+
+[FINAL] ['Posso tocar você com este alfinete?']
+1: (35) Posso tocar você com este alfinete?
+
+[SRT BLOCK 52]
+1: (35) Posso tocar você com este alfinete?
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'O que me diz? Você consegue sentir?'
+
+[INIT] N=1, avg=35.00
+[INIT LINES] ['O que me diz? Você consegue sentir?']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['O que me diz? Você consegue sentir?']
+
+[FINAL] ['O que me diz? Você consegue sentir?']
+1: (35) O que me diz? Você consegue sentir?
+
+[SRT BLOCK 53]
+1: (35) O que me diz? Você consegue sentir?
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Não sei dizer, então vou tentar outra coisa.'
+
+[INIT] N=1, avg=44.00
+[INIT LINES] ['Não sei dizer, então vou tentar outra coisa.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Não sei dizer, então vou tentar outra coisa.']
+
+[FINAL] ['Não sei dizer, então vou tentar outra coisa.']
+1: (44) Não sei dizer, então vou tentar outra coisa.
+
+[SRT BLOCK 54]
+1: (44) Não sei dizer, então vou tentar outra coisa.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'sente isso, se você sente essa pressão.'
+
+[INIT] N=2, avg=44.00
+[INIT LINES] ['Gostaria que você me dissesse se você... se você', 'sente isso, se você sente essa pressão.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'você' → next (len now 43 / avg 44.00)
+[AFTER BALANCE] ['Gostaria que você me dissesse se você... se', 'você sente isso, se você sente essa pressão.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  F1-S2: punctuation rule → moved 'se'
+  After F1: [0]='Gostaria que você me dissesse se você...' | [1]='se você sente isso, se você sente essa pressão.'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: last word 'você...' ends with punctuation → skip
+F3: 'você...' ends with punctuation, next line continues → skip
+
+[FINAL] ['Gostaria que você me dissesse se você...', 'se você sente isso, se você sente essa pressão.']
+1: (40) Gostaria que você me dissesse se você...
+2: (47) se você sente isso, se você sente essa pressão.
+
+[SRT BLOCK 55]
+1: (40) Gostaria que você me dissesse se você...
+2: (47) se você sente isso, se você sente essa pressão.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Tudo bem? E neste lado?'
+
+[INIT] N=1, avg=23.00
+[INIT LINES] ['Tudo bem? E neste lado?']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Tudo bem? E neste lado?']
+
+[FINAL] ['Tudo bem? E neste lado?']
+1: (23) Tudo bem? E neste lado?
+
+[SRT BLOCK 56]
+1: (23) Tudo bem? E neste lado?
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Você consegue sentir a pressão deste lado?'
+
+[INIT] N=1, avg=42.00
+[INIT LINES] ['Você consegue sentir a pressão deste lado?']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Você consegue sentir a pressão deste lado?']
+
+[FINAL] ['Você consegue sentir a pressão deste lado?']
+1: (42) Você consegue sentir a pressão deste lado?
+
+[SRT BLOCK 57]
+1: (42) Você consegue sentir a pressão deste lado?
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Ok. Vi que você recuou desta vez.'
+
+[INIT] N=1, avg=33.00
+[INIT LINES] ['Ok. Vi que você recuou desta vez.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Ok. Vi que você recuou desta vez.']
+
+[FINAL] ['Ok. Vi que você recuou desta vez.']
+1: (33) Ok. Vi que você recuou desta vez.
+
+[SRT BLOCK 58]
+1: (33) Ok. Vi que você recuou desta vez.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'Este item nunca é marcado como "não testável".'
+
+[INIT] N=1, avg=46.00
+[INIT LINES] ['Este item nunca é marcado como "não testável".']
+
+[STEP 1.5] BALANCE LINES BY AVG
+[AFTER BALANCE] ['Este item nunca é marcado como "não testável".']
+
+[FINAL] ['Este item nunca é marcado como "não testável".']
+1: (46) Este item nunca é marcado como "não testável".
+
+[SRT BLOCK 59]
+1: (46) Este item nunca é marcado como "não testável".
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'com estímulos dolorosos vigorosos,'
+
+[INIT] N=2, avg=42.50
+[INIT LINES] ['Você deve testar pacientes estuporosos ou afásicos', 'com estímulos dolorosos vigorosos,']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'afásicos' → next (len now 41 / avg 42.50)
+[AFTER BALANCE] ['Você deve testar pacientes estuporosos ou', 'afásicos com estímulos dolorosos vigorosos,']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Você deve testar pacientes estuporosos ou' | [1]='afásicos com estímulos dolorosos vigorosos,'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'afásicos' doesn't meet transfer conditions → skip
+  After F2: [0]='Você deve testar pacientes estuporosos ou' | [1]='afásicos com estímulos dolorosos vigorosos,'
+F3: 'ou' not eligible for transfer
+
+[FINAL] ['Você deve testar pacientes estuporosos ou', 'afásicos com estímulos dolorosos vigorosos,']
+1: (41) Você deve testar pacientes estuporosos ou
+2: (43) afásicos com estímulos dolorosos vigorosos,
+
+[SRT BLOCK 60]
+1: (41) Você deve testar pacientes estuporosos ou
+2: (43) afásicos com estímulos dolorosos vigorosos,
+
+[STEP 1] GREEDY SPLIT
+  -> final push: 'resposta.'
+
+[INIT] N=3, avg=35.33
+[INIT LINES] ['como a pressão no leito ungueal, e então decidir', 'entre 1 ou 0 com base na ocorrência de qualquer', 'resposta.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'decidir' → next (len now 40 / avg 35.33)
+  [BALANCE] move 'então' → next (len now 34 / avg 35.33)
+  [BALANCE] move 'qualquer' → next (len now 52 / avg 35.33)
+  [BALANCE] move 'de' → next (len now 49 / avg 35.33)
+  [BALANCE] move 'ocorrência' → next (len now 38 / avg 35.33)
+  [BALANCE] move 'na' → next (len now 35 / avg 35.33)
+[AFTER BALANCE] ['como a pressão no leito ungueal, e', 'então decidir entre 1 ou 0 com base', 'na ocorrência de qualquer resposta.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  F1-S2: single character 'e' → next line
+  After F1: [0]='como a pressão no leito ungueal,' | [1]='e então decidir entre 1 ou 0 com base'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: first word 'e' = 1 character → skip
+F3: 'ungueal,' ends with punctuation, next line continues → skip
+
+=== ITER 1 ===
+
+[F1] Processing line 1 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [1]='e então decidir entre 1 ou 0 com base' | [2]='na ocorrência de qualquer resposta.'
+
+[F2] Processing line 1 (pulling from next line)
+  F2: 'na' doesn't meet transfer conditions → skip
+  After F2: [1]='e então decidir entre 1 ou 0 com base' | [2]='na ocorrência de qualquer resposta.'
+F3: 'base' not eligible for transfer
+
+[FINAL] ['como a pressão no leito ungueal,', 'e então decidir entre 1 ou 0 com base', 'na ocorrência de qualquer resposta.']
+1: (32) como a pressão no leito ungueal,
+2: (37) e então decidir entre 1 ou 0 com base
+3: (35) na ocorrência de qualquer resposta.
+
+[SRT BLOCK 61]
+1: (32) como a pressão no leito ungueal,
+2: (37) e então decidir entre 1 ou 0 com base
+3: (35) na ocorrência de qualquer resposta.
+
+[STEP 1] GREEDY SPLIT
+  -> final push: '2 no item sensorial.'
+
+[INIT] N=3, avg=39.67
+[INIT LINES] ['Pacientes que obtiveram pontuação 3 no nível de', 'consciência 1A receberão automaticamente pontuação', '2 no item sensorial.']
+
+[STEP 1.5] BALANCE LINES BY AVG
+  [BALANCE] move 'de' → next (len now 44 / avg 39.67)
+  [BALANCE] move 'nível' → next (len now 38 / avg 39.67)
+  [BALANCE] move 'pontuação' → next (len now 49 / avg 39.67)
+  [BALANCE] move 'automaticamente' → next (len now 33 / avg 39.67)
+[AFTER BALANCE] ['Pacientes que obtiveram pontuação 3 no', 'nível de consciência 1A receberão', 'automaticamente pontuação 2 no item sensorial.']
+
+=== ITER 0 ===
+
+[F1] Processing line 0 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [0]='Pacientes que obtiveram pontuação 3 no' | [1]='nível de consciência 1A receberão'
+
+[F2] Processing line 0 (pulling from next line)
+  F2: 'nível' doesn't meet transfer conditions → skip
+  After F2: [0]='Pacientes que obtiveram pontuação 3 no' | [1]='nível de consciência 1A receberão'
+F3: moved 'no' due to large length difference (5)
+
+=== ITER 1 ===
+
+[F1] Processing line 1 (technical and semantic transfer)
+  F1-S1: no movement, length is normal
+  After F1: [1]='no nível de consciência 1A receberão' | [2]='automaticamente pontuação 2 no item sensorial.'
+
+[F2] Processing line 1 (pulling from next line)
+  F2: 'automaticamente' doesn't meet transfer conditions → skip
+  After F2: [1]='no nível de consciência 1A receberão' | [2]='automaticamente pontuação 2 no item sensorial.'
+F3: 'receberão' not eligible for transfer
+
+[FINAL] ['Pacientes que obtiveram pontuação 3', 'no nível de consciência 1A receberão', 'automaticamente pontuação 2 no item sensorial.']
+1: (35) Pacientes que obtiveram pontuação 3
+2: (36) no nível de consciência 1A receberão
+3: (46) automaticamente pontuação 2 no item sensorial.
+
+[SRT BLOCK 62]
+1: (35) Pacientes que obtiveram pontuação 3
+2: (36) no nível de consciência 1A receberão
+3: (46) automaticamente pontuação 2 no item sensorial.
+
+Brief summary:
+[﻿1] 2 lines
+[2] 2 lines
+[3] 2 lines
+[4] 2 lines
+[5] 2 lines
+[6] 1 lines
+[7] 1 lines
+[8] 2 lines
+[9] 3 lines
+[10] 3 lines
+[11] 3 lines
+[12] 1 lines
+[13] 2 lines
+[14] 3 lines
+[15] 2 lines
+[16] 2 lines
+[17] 2 lines
+[18] 3 lines
+[19] 1 lines
+[20] 2 lines
+[21] 1 lines
+[22] 1 lines
+[23] 2 lines
+[24] 2 lines
+[25] 1 lines
+[26] 1 lines
+[27] 1 lines
+[28] 1 lines
+[29] 1 lines
+[30] 2 lines
+[31] 2 lines
+[32] 2 lines
+[33] 2 lines
+[34] 2 lines
+[35] 2 lines
+[36] 1 lines
+[37] 1 lines
+[38] 1 lines
+[39] 1 lines
+[40] 1 lines
+[41] 1 lines
+[42] 1 lines
+[43] 1 lines
+[44] 1 lines
+[45] 1 lines
+[46] 1 lines
+[47] 1 lines
+[48] 2 lines
+[49] 3 lines
+[50] 3 lines
+[51] 1 lines
+[52] 1 lines
+[53] 1 lines
+[54] 1 lines
+[55] 2 lines
+[56] 1 lines
+[57] 1 lines
+[58] 1 lines
+[59] 1 lines
+[60] 2 lines
+[61] 3 lines
+[62] 3 lines
