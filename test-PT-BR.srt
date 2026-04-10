@@ -1,248 +1,216 @@
 ﻿1
-00:00:05,433 --> 00:00:08,633
-A percepção sensorial é testada com uma série de picadas de alfinete.
+00:00:01,200 --> 00:00:07,300
+Olá, sou Dr. Patrick Lyden, Professor de Ciências Neurológicas do Centro Médico da Universidade da Califórnia em San Diego
 
 2
-00:00:08,633 --> 00:00:12,966
-A retirada diante de um estímulo doloroso é utilizada em pacientes obnubilados ou afásicos.
+00:00:07,300 --> 00:00:10,166
+e médico do corpo clínico do VA Medical Center.
 
 3
-00:00:12,966 --> 00:00:16,199
-Não utilize nenhum objeto que não seja um alfinete de segurança ou de costureira.
+00:00:10,166 --> 00:00:17,099
+Vou dar instruções básicas sobre como examinar e pontuar pacientes usando a Escala de AVC do NINDS/NIH.
 
 4
-00:00:16,200 --> 00:00:19,500
-Não são permitidos clipes de papel, gravetos quebrados ou canetas esferográficas.
+00:00:17,100 --> 00:00:20,400
+Após cada conjunto de instruções de demonstração e pontuação,
 
 5
-00:00:19,500 --> 00:00:23,833
-Examine o paciente com o alfinete nas porções proximais dos quatro membros
+00:00:20,400 --> 00:00:23,866
+Vou explicar algumas sutilezas que aprendemos ao longo dos anos.
 
 6
-00:00:23,833 --> 00:00:26,333
-e pergunte se o paciente sente o estímulo.
+00:00:23,866 --> 00:00:29,332
+Se achar útil, fique à vontade para clicar na seção de recursos especiais da página do menu.
 
 7
-00:00:26,333 --> 00:00:28,566
-O paciente não precisa estar de olhos fechados.
+00:00:29,333 --> 00:00:32,966
+Há trechos de entrevistas com outros especialistas em escalas de AVC,
 
 8
-00:00:28,566 --> 00:00:33,232
-Pergunte ao paciente se existe alguma assimetria entre os lados direito e esquerdo.
+00:00:32,966 --> 00:00:36,766
+que dão ótimas dicas de como pontuar diversos itens.
 
 9
-00:00:33,233 --> 00:00:38,566
-Perguntar se o paciente sente a picada nítida ou amortecimento só gera confusão e m[a interpretação.
+00:00:36,766 --> 00:00:42,799
+Primeiramente, vamos discutir as diretrizes gerais importantes e as condições ideais para a realização do exame.
 
 10
-00:00:38,566 --> 00:00:45,232
-Para otimizar a reprodutibilidade, peça para o paciente apenas comparar os dois lados e dizer se há alguma diferença.
+00:00:42,800 --> 00:00:49,066
+O valor das avaliações da escala de AVC depende de interações uniformes entre examinador e paciente.
 
 11
-00:00:45,233 --> 00:00:49,933
-Em pacientes confusos, afásicos ou com nível de consciência reduzido, observe a simetria das expressões faciais.
+00:00:49,066 --> 00:00:54,132
+Qualquer pessoa que aplique o exame deve seguir rigorosamente os métodos de avaliação e pontuação
 
 12
-00:00:49,933 --> 00:00:52,166
-e a resposta ao estímulo doloroso.
+00:00:54,133 --> 00:00:58,266
+para garantir a confiabilidade e a reprodutibilidade dos resultados.
 
 13
-00:00:52,166 --> 00:00:55,632
-Apenas a perda de sensibilidade atribuída ao AVC é pontuada.
+00:00:58,266 --> 00:01:03,666
+Lembre-se, a escala de AVC foi criada para medir os déficits observados em um grupo de pacientes
 
 14
-00:00:55,633 --> 00:01:02,766
-Examine quantas áreas do corpo (braços, pernas, tronco e rosto) forem necessárias para avaliar com precisão a perda hemi-sensorial.
+00:01:03,666 --> 00:01:08,399
+então algumas das regras de pontuação podem parecer estranhas para vocês, médicos experientes.
 
 15
-00:01:02,766 --> 00:01:07,632
-Ao testar a sensibilidade, não teste as extremidades dos membros, como mãos ou pés,
+00:01:08,400 --> 00:01:14,366
+Se você seguir essas regras de pontuação, a confiabilidade das pontuações obtidas em diferentes locais por diferentes examinadores
 
 16
-00:01:07,633 --> 00:01:11,299
-pois a resposta pode ser confundida por uma neuropatia não relacionada.
+00:01:14,366 --> 00:01:16,366
+será muito semelhante.
 
 17
-00:01:11,300 --> 00:01:15,033
-A menos que seja absolutamente necessário, não faça o teste por cima da roupa.
+00:01:16,366 --> 00:01:18,832
+Todos os itens da escala devem ser pontuados.
 
 18
-00:01:15,033 --> 00:01:20,866
-Vou tocar você no lado direitp ou esquerdo e você me diz se são iguais ou se um lado é mais sensível.
+00:01:18,833 --> 00:01:22,966
+Registre uma pontuação para cada item da escala antes de passar para o próximo.
 
 19
-00:01:20,866 --> 00:01:21,399
-Ok.
+00:01:22,966 --> 00:01:29,299
+Se algum item não for testado, uma explicação deverá ser escrita de forma clara e detalhada no formulário da escala de AVC.
 
 20
-00:01:21,400 --> 00:01:28,600
-Começando pelo seu rosto: direita, esquerda, qual é mais nítido?
+00:01:29,300 --> 00:01:34,066
+É importante usar apenas o formulário validado disponibilizado pelo NIH.
 
 21
-00:01:28,600 --> 00:01:30,866
-Ou são a mesma coisa?
+00:01:34,066 --> 00:01:36,399
+Na embalagem que você recebeu com este disco,
 
 22
-00:01:30,866 --> 00:01:31,932
-Mais ou menos a mesma coisa.
+00:01:36,400 --> 00:01:41,266
+estão listados vários sites onde você pode baixar a versão correta da escala.
 
 23
-00:01:31,933 --> 00:01:35,133
-Mais ou menos a mesma coisa, certo. Vamos experimentar nas mãos:
+00:01:41,266 --> 00:01:44,099
+Normalmente, nós registramos a primeira tentativa do paciente,
 
 24
-00:01:35,133 --> 00:01:41,399
-direita, esquerda, qual é mais nítido? Ou são a mesma coisa?
+00:01:44,100 --> 00:01:48,966
+mesmo que as tentativas seguintes sejam melhores, para otimizar a reprodutibilidade da pontuação.
 
 25
-00:01:41,400 --> 00:01:42,200
-Mais amortecido.
+00:01:48,966 --> 00:01:51,032
+Não volte atrás e mude as pontuações.
 
 26
-00:01:42,200 --> 00:01:44,766
-Mais amortecido na direita, ok.
+00:01:51,033 --> 00:01:54,733
+A pontuação mais consistente será a sua primeira impressão.
 
 27
-00:01:44,766 --> 00:01:48,066
-Vamos testar suas pernas: qual é mais nítido?
+00:01:54,733 --> 00:01:57,199
+Trabalhe de forma metódica e rápida.
 
 28
-00:01:48,066 --> 00:01:51,132
-Ou são a mesma coisa?
+00:01:57,200 --> 00:02:04,700
+Um examinador experiente conseguirá concluir a avaliação da Escala de AVC do NIH em cerca de 5 minutos em casos não complicados,
 
 29
-00:01:51,133 --> 00:01:55,133
-Ah, um lado é mais amortecido, o lado direito.
+00:02:04,700 --> 00:02:08,100
+embora um paciente difícil possa precisar de um pouco mais de tempo.
 
 30
-00:01:55,133 --> 00:01:58,433
-Para o item número 8 da escala, este paciente obteve uma pontuação de 1.
+00:02:08,100 --> 00:02:12,100
+Cada item da escala é avaliado de forma independente aos itens anteriores.
 
 31
-00:01:58,433 --> 00:02:00,866
-Vamos analisar como esse item da escala é pontuado.
+00:02:12,100 --> 00:02:15,633
+Vamos destacar algumas exceções ao longo do caminho.
 
 32
-00:02:00,866 --> 00:02:04,132
-Atribua uma pontuação 0 quando não houver evidência de perda sensorial.
+00:02:15,633 --> 00:02:21,666
+A seguir, apresentamos algumas convenções importantes utilizadas para garantir a excelente reprodutibilidade da Escala de AVC do NIH.
 
 33
-00:02:04,133 --> 00:02:06,699
-Atribua uma pontuação de 1 para perda leve ou moderada.
+00:02:21,666 --> 00:02:25,432
+Administre os itens da escala na ordem exata em que estão inseridos.
 
 34
-00:02:06,700 --> 00:02:09,133
-Vou testar agora o quanto você sente este alfinete.
+00:02:25,433 --> 00:02:27,066
+Evite orientar o paciente.
 
 35
-00:02:09,133 --> 00:02:12,999
-Quero que você me diga se o lado direito é mais nítido, o lado esquerdo ou se são iguais.
+00:02:27,066 --> 00:02:32,199
+mesmo que isso seja contrário à prática clínica usual de tentar obter o melhor desempenho.
 
 36
-00:02:13,000 --> 00:02:13,400
-Ok.
+00:02:32,200 --> 00:02:34,800
+Aceite a primeira tentativa do paciente.
 
 37
-00:02:13,400 --> 00:02:17,066
-Começando pelo seu rosto.
+00:02:34,800 --> 00:02:38,900
+Avalie apenas o que o paciente faz, não o que você acha que ele pode fazer.
 
 38
-00:02:17,066 --> 00:02:18,699
-Qual lado é mais nítido?
+00:02:38,900 --> 00:02:44,133
+Durante o processo de avaliação, você poderá formar uma impressão sobre o nível de função ou lesão.
 
 39
-00:02:18,700 --> 00:02:19,533
-Esquerdo.
+00:02:44,133 --> 00:02:46,766
+Essas impressões não devem influenciar sua pontuação.
 
 40
-00:02:19,533 --> 00:02:22,333
-Qual lado é mais nítido?
+00:02:46,766 --> 00:02:49,732
+Novamente, avalie apenas o desempenho observado.
 
 41
-00:02:22,333 --> 00:02:23,199
-Esquerdo.
+00:02:49,733 --> 00:02:52,233
+Às vezes, essas regras não fazem sentido,
 
 42
-00:02:23,200 --> 00:02:28,900
-Braços: qual lado é mais nítido?
+00:02:52,233 --> 00:02:57,199
+mas se todos os examinadores aplicarem a escala da mesma maneira, as pontuações serão consistentes.
 
 43
-00:02:28,900 --> 00:02:29,366
-Mais ou menos a mesma coisa.
+00:02:57,200 --> 00:03:00,266
+Certifique-se de incluir todos os déficits na sua pontuação,
 
 44
-00:02:29,366 --> 00:02:31,066
-Mais ou menos a mesma coisa? Ok.
+00:03:00,266 --> 00:03:03,999
+incluindo os que possam resultar de AVCs anteriores.
 
 45
-00:02:31,066 --> 00:02:35,832
-Agora vamos para as pernas.
+00:03:04,000 --> 00:03:05,800
+Nem todas as decisões são simples.
 
 46
-00:02:35,833 --> 00:02:36,766
-O lado esquerdo é mais nítido.
+00:03:05,800 --> 00:03:08,066
+Quando você estiver com dificuldade para escolher uma pontuação,
 
 47
-00:02:36,766 --> 00:02:38,266
-O lado esquerdo é mais nítido.
+00:03:08,066 --> 00:03:12,699
+tente descartar a pontuação extrema e, em seguida, pondere as pontuações intermediárias.
 
 48
-00:02:38,266 --> 00:02:41,066
-Atribua uma pontuação de 2 quando as evidências confirmarem perdas graves.
+00:03:12,700 --> 00:03:16,400
+Você deve manter o material de referência da Escala de AVC, como o guia de pontuação,
 
 49
-00:02:41,066 --> 00:02:45,799
-Atribua uma nota 2 apenas quando for possível demonstrar claramente uma perda grave ou total da sensibilidade.
+00:03:16,400 --> 00:03:20,733
+à mão ao aplicar e pontuar a Escala de AVC do NIH.
 
 50
-00:02:45,800 --> 00:02:50,866
-Pacientes com acidente vascular cerebral no tronco cerebral, que apresentam perda bilateral de sensibilidade, também obtêm uma pontuação de 2.
+00:03:20,733 --> 00:03:24,099
+No entanto, à beira do leito, em uma situação crítica,
 
 51
-00:02:50,866 --> 00:02:54,266
-Gostaria de ver se você tem alguma sensação.
+00:03:24,100 --> 00:03:29,200
+você só precisa da folha de pontuação correta, das folhas de identificação e de um alfinete.
 
 52
-00:02:54,266 --> 00:02:56,432
-Posso tocar você com este alfinete?
+00:03:29,200 --> 00:03:31,600
+Estas são as convenções gerais.
 
 53
-00:02:56,433 --> 00:03:01,433
-O que me diz? Você consegue sentir?
+00:03:31,600 --> 00:03:34,266
+Agora, vamos focar em cada item da escala.
 
 54
-00:03:01,433 --> 00:03:05,166
-Não sei dizer, então vou tentar outra coisa.
-
-55
-00:03:05,166 --> 00:03:11,799
-Gostaria que você me dissesse se você... se você sente isso, se você sente essa pressão.
-
-56
-00:03:11,800 --> 00:03:14,866
-Tudo bem? E neste lado?
-
-57
-00:03:14,866 --> 00:03:17,832
-Você consegue sentir a pressão deste lado?
-
-58
-00:03:17,833 --> 00:03:21,166
-Ok. Vi que você recuou desta vez.
-
-59
-00:03:21,166 --> 00:03:24,132
-Este item nunca é marcado como "não testável".
-
-60
-00:03:24,133 --> 00:03:28,499
-Você deve testar pacientes estuporosos ou afásicos com estímulos dolorosos vigorosos,
-
-61
-00:03:28,500 --> 00:03:34,666
-como a pressão no leito ungueal, e então decidir entre 1 ou 0 com base na ocorrência de qualquer resposta.
-
-62
-00:03:34,666 --> 00:03:41,632
-Pacientes que obtiveram pontuação 3 no nível de consciência 1A receberão automaticamente pontuação 2 no item sensorial.
+00:03:34,266 --> 00:03:39,066
+Vou descrever e demonstrar cada item da escala para você e, em seguida, explicar a pontuação.
 

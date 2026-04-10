@@ -1,0 +1,15 @@
+
+*.srt
+
+
+*.swp
+*.tmp
+*.bak
+
+
+.DS_Store
+Thumbs.db
+
+
+/dist
+/build
