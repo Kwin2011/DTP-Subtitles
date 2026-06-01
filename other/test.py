@@ -1,4 +1,4 @@
-from line_wrapper import LineWrapper
+from core.line_wrapper import LineWrapper
 
 w = LineWrapper(
     "Perguntar se o paciente sente a picada nítida ou amortecimento só gera confusão e má interpretação.",

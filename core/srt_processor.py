@@ -1,5 +1,5 @@
 import pysrt
-from line_wrapper import LineWrapper
+from core.line_wrapper import LineWrapper
 
 
 class SRTProcessor:

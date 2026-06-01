@@ -21,10 +21,10 @@ File strategy:
 import os
 import shutil
 import argparse
-from srt_processor import SRTProcessor
-from srt_splitter import SRTSplitter
-from processing_report import ProcessingReport
-from logger import Logger
+from core.srt_processor import SRTProcessor
+from core.srt_splitter import SRTSplitter
+from utils.processing_report import ProcessingReport
+from utils.logger import Logger
 
 
 def ensure_backup(srt_path: str, logger: Logger) -> str:
