@@ -12,70 +12,77 @@ Options:
     --max-chars N   Max characters per subtitle line (default: 36)
     --top N         Files to show in final report (default: 10)
 
-Output files (written next to each source file):
-    <name>_processed.srt   after line-wrap pass
-    <name>_split.srt       after 2-line block splitting
-
-Already-processed files (*_processed.srt, *_split.srt) are skipped.
-A detailed log file is saved in the script directory.
+File strategy:
+    - If <name>.bak exists  → process it, overwrite <name>.srt
+    - If <name>.bak missing → copy <name>.srt to <name>.bak, then process
+    .bak always holds the original; .srt always holds the result.
 """
 
 import os
+import shutil
 import argparse
 from srt_processor import SRTProcessor
 from srt_splitter import SRTSplitter
 from processing_report import ProcessingReport
 from logger import Logger
 
-PROCESSED_SUFFIXES = ("_processed.srt", "_split.srt")
 
-
-def is_already_processed(filename: str) -> bool:
-    lower = filename.lower()
-    return any(lower.endswith(s) for s in PROCESSED_SUFFIXES)
+def ensure_backup(srt_path: str, logger: Logger) -> str:
+    """
+    Ensure a .bak backup exists for srt_path.
+    Returns the path to the source file that should be processed (.bak).
+    """
+    bak_path = os.path.splitext(srt_path)[0] + ".bak"
+    if os.path.exists(bak_path):
+        logger.console(f"    [bak] backup found — using {os.path.basename(bak_path)}")
+    else:
+        shutil.copy2(srt_path, bak_path)
+        logger.console(f"    [bak] backup created → {os.path.basename(bak_path)}")
+    return bak_path
 
 
 def collect_srt_files(root_dir: str, logger: Logger) -> list[str]:
+    """Return all .srt files (excluding .bak-like names, none here)."""
     found = []
-    skipped = []
     for dirpath, _dirs, files in os.walk(root_dir):
-        for filename in files:
-            if not filename.lower().endswith(".srt"):
-                continue
-            if is_already_processed(filename):
-                skipped.append(filename)
-                continue
-            found.append(os.path.join(dirpath, filename))
-    if skipped:
-        logger.console(f"  Skipped {len(skipped)} already-processed file(s).")
+        for filename in sorted(files):
+            if filename.lower().endswith(".srt"):
+                found.append(os.path.join(dirpath, filename))
     return found
 
 
-def process_file(input_path: str, index: int, total: int,
+def process_file(srt_path: str, index: int, total: int,
                  max_chars: int, report: ProcessingReport,
                  logger: Logger) -> None:
-    base, _ = os.path.splitext(input_path)
-    output_processed = base + "_processed.srt"
-    output_split     = base + "_split.srt"
 
-    logger.console_file_start(input_path, index, total)
-    logger.log_file_start(input_path)
+    logger.console_file_start(srt_path, index, total)
+    logger.log_file_start(srt_path)
+    report.begin_file(srt_path)
 
-    report.begin_file(input_path)
+    # --- Backup logic ---
+    source_path = ensure_backup(srt_path, logger)   # always process from .bak
 
     # --- Step 1: clean ---
-    processor = SRTProcessor(input_path)
+    processor = SRTProcessor(source_path)
     processor.clean_text(report=report, logger=logger)
 
     # --- Step 2: wrap lines ---
     processor.split(max_chars=max_chars, report=report, logger=logger)
     processor.stats(logger=logger)
-    processor.save(output_processed)
+
+    # Save wrapped result to a temp file so splitter can read it
+    tmp_path = srt_path + ".tmp"
+    processor.save(tmp_path)
 
     # --- Step 3: split blocks to max 2 lines ---
-    splitter = SRTSplitter(output_processed)
+    splitter = SRTSplitter(tmp_path)
     blocks_split = splitter.split_blocks(report=report, logger=logger)
-    splitter.save(output_split)
+
+    # Overwrite the original .srt with final result
+    splitter.save(srt_path)
+
+    # Clean up temp file
+    os.remove(tmp_path)
 
     # --- Per-file summary to log ---
     changed   = getattr(logger, "_proc_changed", 0)
@@ -89,12 +96,32 @@ def process_file(input_path: str, index: int, total: int,
         words_moved=words,
         empty_removed=empty,
     )
-
     logger.console_file_done(
         blocks=changed + unchanged,
         changed=changed,
         split=blocks_split,
     )
+
+
+
+def reset_backups(root_dir: str) -> None:
+    """Restore every .bak file back to .srt, overwriting the current .srt."""
+    print(f"\nResetting backups in: {root_dir}")
+    restored = 0
+    for dirpath, _dirs, files in os.walk(root_dir):
+        for filename in sorted(files):
+            if not filename.lower().endswith(".bak"):
+                continue
+            bak_path = os.path.join(dirpath, filename)
+            srt_path = os.path.splitext(bak_path)[0] + ".srt"
+            shutil.copy2(bak_path, srt_path)
+            os.remove(bak_path)
+            print(f"  ✅ {filename}  →  {os.path.basename(srt_path)}  (backup removed)")
+            restored += 1
+    if restored:
+        print(f"\nDone. {restored} file(s) restored.")
+    else:
+        print("No .bak files found — nothing to reset.")
 
 
 def parse_args() -> argparse.Namespace:
@@ -109,6 +136,8 @@ def parse_args() -> argparse.Namespace:
                         help="Max chars per line (default: 36)")
     parser.add_argument("--top", type=int, default=10, metavar="N",
                         help="Files in final report (default: 10)")
+    parser.add_argument("--reset", action="store_true",
+                        help="Restore all .bak files back to .srt and exit")
     return parser.parse_args()
 
 
@@ -122,6 +151,10 @@ def main() -> None:
         print(f"❌ Directory not found: {args.target_dir}")
         raise SystemExit(1)
 
+    if args.reset:
+        reset_backups(args.target_dir)
+        return
+
     logger = Logger(target_dir=args.target_dir, max_chars=args.max_chars)
     log_path = logger.open()
 
@@ -133,7 +166,7 @@ def main() -> None:
     srt_files = collect_srt_files(args.target_dir, logger)
 
     if not srt_files:
-        logger.console("No unprocessed .srt files found.")
+        logger.console("No .srt files found.")
         logger.close()
         return
 
@@ -152,7 +185,6 @@ def main() -> None:
     logger.console(f"\nAll done. Processed {len(srt_files)} file(s).")
     logger.console(f"Log saved  : {log_path}")
 
-    # --- Final report to console AND log ---
     report.print_summary(top_n=args.top)
     report.write_to_log(logger, top_n=args.top)
 
